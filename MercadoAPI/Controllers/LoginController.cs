@@ -16,10 +16,10 @@ namespace MercadoAPI.Controllers
 			_dbContext = dbContext;
 		}
 
-
+		
 		//: api/Login
 		[HttpPost]
-		public async Task<ActionResult<Signup>> Login()
+		public async Task<ActionResult<Login>> Login()
 		{
 			if (!Request.Headers.TryGetValue("Username", out var usernameValues))
 			{
@@ -38,13 +38,12 @@ namespace MercadoAPI.Controllers
 			{
 				return NotFound();
 			}
-
+			return Ok(User);
 			/*if (user.password != signup.password)
 			{
 				return BadRequest("Invalid password");
 			}*/
 
-			return user;
 		}
 
 

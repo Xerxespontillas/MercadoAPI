@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 
+
 namespace MercadoAPI.Controllers
 {
     [Route("api/[controller]")]
