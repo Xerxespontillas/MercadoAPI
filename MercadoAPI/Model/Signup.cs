@@ -27,6 +27,8 @@ namespace MercadoAPI.Model
 
 		[Required]
 		public string password { get; set; }
+
+		public ICollection<Product> Products{ get; set; }
 	}
 
 }

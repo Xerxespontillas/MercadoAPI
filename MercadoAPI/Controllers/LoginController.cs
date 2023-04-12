@@ -39,10 +39,6 @@ namespace MercadoAPI.Controllers
 				return NotFound();
 			}
 			return Ok(User);
-			/*if (user.password != signup.password)
-			{
-				return BadRequest("Invalid password");
-			}*/
 
 		}
 

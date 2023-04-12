@@ -10,6 +10,6 @@ namespace MercadoAPI.Model
         }
 
         public DbSet<Signup> Users { get; set; }
-      
-    }
+		public DbSet<Product> Product { get; set; }
+	}
 }
